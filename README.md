@@ -1,0 +1,1 @@
+# portofolio_ahmadparidi_new
