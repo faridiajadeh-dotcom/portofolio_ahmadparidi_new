@@ -20,17 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-
     // ========================================
     // 2. SMOOTH SCROLL NAVIGASI
     // ========================================
     document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-
         link.addEventListener("click", function (event) {
-
             const targetId = this.getAttribute("href");
 
-            // Abaikan link kosong atau href="#"
             if (!targetId || targetId === "#") {
                 return;
             }
@@ -45,92 +41,118 @@ document.addEventListener("DOMContentLoaded", function () {
                     block: "start"
                 });
             }
-
         });
-
     });
 
-// ========================================
-// 3. FORM CONTACT - FORMSUBMIT
-// ========================================
-const contactForm = document.getElementById("contact-form");
+    // ========================================
+    // 3. CONTACT FORM - EMAILJS
+    // ========================================
+    const contactForm = document.getElementById("contact-form");
+    const formStatus = document.getElementById("form-status");
+    const sendButton = document.getElementById("send-btn");
 
-if (contactForm) {
-    contactForm.addEventListener("submit", async function (event) {
-        event.preventDefault();
+    // Ganti dengan ID EmailJS milikmu
+    const EMAILJS_SERVICE_ID = "service_djr0giq";
+    const EMAILJS_TEMPLATE_ID = "template_yfdoe85";
+    const EMAILJS_PUBLIC_KEY = "VPQtqaPTVqgPnhz63";
+    
+emailjs.init({
+    publicKey: "VPQtqaPTVqgPnhz63"
+});
 
-        const tombol = document.getElementById("send-btn");
-        const status = document.getElementById("form-status");
 
-        const nama = contactForm.elements["name"].value.trim();
-        const email = contactForm.elements["email"].value.trim();
-        const subject = contactForm.elements["subject"].value.trim();
-        const pesan = contactForm.elements["message"].value.trim();
+    function tampilkanStatus(teks, warna) {
+        if (!formStatus) return;
 
-        function tampilkanStatus(teks, warna) {
-            status.textContent = teks;
-            status.style.color = warna;
-            status.style.display = "block";
-        }
+        formStatus.textContent = teks;
+        formStatus.style.color = warna;
+        formStatus.style.display = "block";
+    }
 
-        if (!nama || !email || !subject || !pesan) {
-            tampilkanStatus("Mohon lengkapi semua kolom.", "#dc2626");
-            return;
-        }
+    if (contactForm && sendButton && formStatus) {
 
-        tombol.disabled = true;
-        tombol.textContent = "Mengirim...";
-        tampilkanStatus("Sedang mengirim pesan...", "#64748b");
+        contactForm.addEventListener("submit", async function (event) {
+            // Mencegah form berpindah halaman atau reload
+            event.preventDefault();
+            event.stopPropagation();
 
-        try {
-            const data = new FormData(contactForm);
+            console.log("FORM CONTACT BERHASIL DIKLIK");
 
-            data.set("_subject", subject);
-            data.set("name", nama);
-            data.set("email", email);
-            data.set("message", pesan);
-            data.set("_template", "table");
+            console.log("EmailJS tersedia:", typeof emailjs !== "undefined");
 
-            const response = await fetch(
-                "https://formsubmit.co/ajax/faridiajadeh@gmail.com",
-                {
-                    method: "POST",
-                    body: data,
-                    headers: {
-                        "Accept": "application/json"
-                    }
-                }
-            );
+            const formStatus = document.getElementById("form-status");
+            formStatus.textContent = "Tombol diklik, sedang memeriksa pengiriman...";
+            formStatus.style.display = "block";
+            formStatus.style.color = "#dc2626";
 
-            const hasil = await response.json();
+            const nama = contactForm.elements["name"].value.trim();
+            const email = contactForm.elements["email"].value.trim();
+            const subject = contactForm.elements["subject"].value.trim();
+            const pesan = contactForm.elements["message"].value.trim();
 
-            if (!response.ok || hasil.success !== true &&
-                hasil.success !== "true") {
-                throw new Error(
-                    hasil.message || "Layanan email menolak permintaan."
+            if (!nama || !email || !subject || !pesan) {
+                tampilkanStatus(
+                    "Mohon lengkapi semua kolom.",
+                    "#dc2626"
                 );
+                return;
             }
 
+            // Pastikan library EmailJS tersedia
+            if (typeof emailjs === "undefined") {
+                tampilkanStatus(
+                    "EmailJS belum termuat. Periksa script pada index.html.",
+                    "#dc2626"
+                );
+                console.error("Library EmailJS tidak ditemukan.");
+                return;
+            }
+
+            const honeypot = contactForm.querySelector('[name="_honey"]');
+
+            if (honeypot && honeypot.value.trim() !== "") {
+                return;
+            }
+
+            sendButton.disabled = true;
+            sendButton.textContent = "Mengirim...";
             tampilkanStatus(
-                "✓ Pesan berhasil dikirim! Terima kasih sudah menghubungi saya.",
-                "#16a34a"
+                "Sedang mengirim pesan...",
+                "#64748b"
             );
 
-            contactForm.reset();
+            try {
+                await emailjs.send(
+                    EMAILJS_SERVICE_ID,
+                    EMAILJS_TEMPLATE_ID,
+                    {
+                        from_name: nama,
+                        from_email: email,
+                        subject: subject,
+                        message: pesan
+                    }
+                );
 
-        } catch (error) {
-            console.error("Kesalahan pengiriman form:", error);
+                tampilkanStatus(
+                    "✓ Pesan berhasil dikirim! Terima kasih sudah menghubungi saya.",
+                    "#16a34a"
+                );
 
-            tampilkanStatus(
-                "✕ Pesan gagal dikirim. Periksa koneksi internet, aktivasi FormSubmit, dan Console browser.",
-                "#dc2626"
-            );
-        } finally {
-            tombol.disabled = false;
-            tombol.textContent = "Send Message";
-        }
-    });
-}
+                contactForm.reset();
 
+            } catch (error) {
+                console.error("EmailJS error:", error);
+
+                tampilkanStatus(
+                    "✕ Pesan gagal dikirim. Periksa konfigurasi EmailJS dan Console browser.",
+                    "#dc2626"
+                );
+
+            } finally {
+                sendButton.disabled = false;
+                sendButton.textContent = "Send Message";
+            }
+        });
+    }
 
 });
