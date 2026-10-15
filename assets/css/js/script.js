@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
         new Typed("#typing", {
             strings: [
                 "Frontend Developer",
-                "UI/UX Designer",
-                "Web Developer"
+                "Web Developer",
+                "Mobile Developer",
+                "Backend Developer"
             ],
             typeSpeed: 70,
             backSpeed: 40,
