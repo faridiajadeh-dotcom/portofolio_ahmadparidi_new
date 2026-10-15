@@ -1,220 +1,394 @@
-/* ========================================
-   RESPONSIVE TABLET
-======================================== */
+/* =====================================
+   TABLET DAN HP
+===================================== */
+
 @media screen and (max-width: 768px) {
 
-    /* Pengaturan umum */
     html,
     body {
         width: 100%;
         max-width: 100%;
-        overflow-x: hidden;
+        overflow-x: clip;
+    }
+
+    body {
+        font-size: 15px;
     }
 
     section {
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Container */
-    .container {
-        width: 90%;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* Navbar */
-    .navbar {
         width: 100%;
         box-sizing: border-box;
-        padding: 15px 5%;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        width: 90%;
+        padding: 18px 0;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 29px;
     }
 
     .navbar ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 12px 20px;
     }
 
     .navbar a {
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    /* Hero */
+    /* HERO */
     .hero {
         width: 90%;
         min-height: auto;
-        padding: 60px 0;
-        gap: 30px;
-        flex-direction: column;
+        padding: 45px 0 60px;
+        flex-direction: column-reverse;
         justify-content: center;
+        gap: 30px;
         text-align: center;
     }
 
-    .hero-text {
+    .hero-text,
+    .hero-image {
         width: 100%;
         max-width: 100%;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero h1 {
-        font-size: clamp(32px, 8vw, 48px);
+        font-size: clamp(38px, 9vw, 55px);
+        line-height: 1.1;
+        margin-bottom: 12px;
         overflow-wrap: anywhere;
     }
 
-    .hero p {
-        font-size: 15px;
-        line-height: 1.7;
+    .hero h2 {
+        font-size: clamp(20px, 5vw, 27px);
+        margin-bottom: 18px;
     }
 
-    /* About */
-    .about-container,
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .about-text,
-    .about-image {
+    .description {
         width: 100%;
-        max-width: 100%;
+        line-height: 1.8;
+        font-size: 14px;
     }
 
-    /* Skills */
-    .skills-container,
-    .skills-grid {
+    .hero-image {
+        position: relative;
+        align-items: center;
+    }
+
+    .hero-image img {
+        width: min(68vw, 280px);
+        height: min(68vw, 280px);
+        object-fit: cover;
+        border-width: 6px;
+    }
+
+    .circle {
+        width: min(75vw, 310px);
+        height: min(75vw, 310px);
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 13px 20px;
+        font-size: 14px;
+    }
+
+    .social {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+
+    /* ABOUT */
+    .about,
+    .skills,
+    .projects,
+    .contact {
+        padding: 65px 6%;
+    }
+
+    .section-title {
+        margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+        font-size: clamp(30px, 7vw, 38px);
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .about-image img {
+        width: min(75vw, 300px);
+        height: min(75vw, 300px);
+    }
+
+    .about-content h3 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 22px;
+    }
+
+    .about-info {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .about-info div {
+        padding: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    /* SKILLS */
+    .skills-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 15px;
     }
 
-    /* Projects */
-    .projects-container,
-    .project-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
-    }
-
-    .project-card {
-        width: 100%;
+    .skill-card {
         min-width: 0;
-        box-sizing: border-box;
+        padding: 25px 15px;
     }
 
-    .project-card img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+    .skill-card i {
+        font-size: 38px;
+        margin-bottom: 15px;
     }
 
-    .project-card h3,
-    .project-card p {
+    .skill-card h3 {
+        font-size: 18px;
+    }
+
+    .skill-card p {
+        font-size: 13px;
+        line-height: 1.7;
         overflow-wrap: anywhere;
     }
 
-    .project-buttons {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .project-buttons a {
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* Contact */
-    .contact-container {
-        width: 90%;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        grid-template-columns: minmax(0, 1fr);
-        gap: 30px;
-    }
-
-    .contact-info,
-    .contact-form {
-        width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form button {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-}
-
-
-/* ========================================
-   RESPONSIVE HP KECIL
-======================================== */
-@media screen and (max-width: 480px) {
-
-    .container {
-        width: 90%;
-    }
-
-    .hero {
-        padding: 45px 0;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .hero h2 {
-        font-size: 19px;
-    }
-
-    .section-title h2 {
-        font-size: 28px;
-    }
-
-    .section-title p {
-        font-size: 14px;
-    }
-
-    /* Skills satu kolom jika diperlukan */
-    .skills-container,
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Projects satu kolom */
-    .projects-container,
-    .project-container {
-        grid-template-columns: 1fr;
+    /* PROJECTS */
+    .projects-container {
+        gap: 25px;
     }
 
     .project-card {
+        min-width: 0;
+        border-radius: 18px;
+        transform: none;
+    }
+
+    .project-card:hover {
+        transform: none;
+    }
+
+    .project-image img {
         width: 100%;
+        height: auto;
+        max-height: 260px;
+        object-fit: cover;
     }
 
-    .project-buttons a {
-        flex: 1 1 100%;
-        text-align: center;
+    .project-content {
+        padding: 20px;
     }
 
+    .project-content h3 {
+        font-size: 23px;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    .project-content p {
+        font-size: 14px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+
+    .tech {
+        gap: 8px;
+        margin: 18px 0;
+    }
+
+    .tech span {
+        font-size: 12px;
+        padding: 7px 11px;
+    }
+
+    .project-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-btn a {
+        flex: auto;
+        width: 100%;
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    /* CONTACT */
     .contact-container {
-        width: 90%;
-        gap: 25px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+        align-items: start;
+    }
+
+    .contact-info h3 {
+        font-size: 29px;
     }
 
     .contact-info p {
         font-size: 14px;
-        line-height: 1.7;
+        line-height: 1.8;
     }
 
-    .contact-form input,
-    .contact-form textarea {
-        padding: 15px;
+    .info-item {
+        gap: 12px;
         font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    .info-item i {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        font-size: 17px;
+    }
+
+    .contact-social {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .contact-social a {
+        width: 44px;
+        height: 44px;
+        font-size: 19px;
+    }
+
+    .contact-form {
+        width: 100%;
+        min-width: 0;
+        gap: 15px;
+    }
+
+    .contact-form input:not([type="hidden"]):not([name="_honey"]),
+    .contact-form textarea {
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+        min-height: 135px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        min-height: 52px;
+        font-size: 15px;
+    }
+
+    .footer {
+        padding: 22px 6%;
+        font-size: 13px;
+    }
+}
+
+
+/* =====================================
+   HP KECIL
+===================================== */
+
+@media screen and (max-width: 480px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar ul {
+        gap: 10px 15px;
+    }
+
+    .hero h1 {
+        font-size: clamp(34px, 9vw, 42px);
+    }
+
+    .hero-image img {
+        width: min(65vw, 240px);
+        height: min(65vw, 240px);
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 14px 16px;
+        box-sizing: border-box;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact {
+        padding: 55px 5%;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image img {
+        max-height: 220px;
+    }
+
+    .project-content {
+        padding: 17px;
     }
 }
