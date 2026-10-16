@@ -9,10 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (typingElement && typeof Typed !== "undefined") {
         new Typed("#typing", {
             strings: [
-                "Frontend Developer",
+                "Fullstack Developer",
                 "Web Developer",
                 "Mobile Developer",
-                "Backend Developer"
             ],
             typeSpeed: 70,
             backSpeed: 40,
