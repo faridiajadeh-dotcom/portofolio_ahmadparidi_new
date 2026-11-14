@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects Portfolio Ahmad Paridi — Mobile Apps, Web Applications, and Computer Vision Projects.">
+    <meta name="theme-color" content="#080B14">
+
+    <title>Projects | Ahmad Paridi — Creative Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Ambient Glowing Background Spheres -->
+    <div class="ambient-glow-wrapper" aria-hidden="true">
+        <div class="ambient-glow ambient-glow-1"></div>
+        <div class="ambient-glow ambient-glow-2"></div>
+    </div>
+
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <div class="container">
+            <nav class="navbar" aria-label="Main Navigation">
+                <a href="index.html#home" class="logo">
+                    AP<span>.</span>
+                </a>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn-nav">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                    <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" style="padding-top: 150px; padding-bottom: 40px; text-align: center;">
+        <div class="container reveal-on-scroll">
+            <span class="section-tag"><i class="fas fa-layer-group"></i> Portfolio Showcase</span>
+            <h1 class="section-title">My Featured <span class="gradient-text">Projects</span></h1>
+            <p class="section-subtitle" style="max-width: 650px; margin: 0 auto;">
+                Koleksi studi kasus, aplikasi mobile, platform web, dan implementasi teknologi computer vision yang telah saya bangun.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects" style="border-top: none;">
+        <div class="container">
+            <div class="projects-grid">
+
+                <!-- PROJECT 1: MONEYTRACK -->
+                <div class="project-card reveal-on-scroll delay-1">
+                    <div class="project-media">
+                        <span class="project-category-badge">Web Application</span>
+                        <img src="assets/css/images/moneytrack_project.png"
+                             alt="MoneyTrack Finance Dashboard"
+                             loading="eager">
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">💰 MoneyTrack</h3>
+                        <p class="project-desc">
+                            Aplikasi manajemen keuangan berbasis web untuk mencatat pemasukan, pengeluaran, kategori transaksi, memantau saldo harian, serta menyajikan dashboard visual dan laporan analitik.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Chart.js</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button type="button"
+                                    class="btn-project-details"
+                                    data-project-trigger="moneytrack">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </button>
+
+                            <a href="https://github.com/faridiajadeh-dotcom"
+                               class="btn-project-github"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View MoneyTrack on GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: AUTOCARE -->
+                <div class="project-card reveal-on-scroll delay-2">
+                    <div class="project-media">
+                        <span class="project-category-badge">Mobile Application</span>
+                        <img src="assets/css/images/autocare_project.png"
+                             alt="AutoCare Service Booking"
+                             loading="lazy">
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">🚗 AutoCare</h3>
+                        <p class="project-desc">
+                            Aplikasi pemesanan servis kendaraan mobile yang memudahkan pengguna mengelola data kendaraan, booking servis bengkel berkala, dan memantau status servis secara real-time.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Expo</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button type="button"
+                                    class="btn-project-details"
+                                    data-project-trigger="autocare">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </button>
+
+                            <a href="https://github.com/faridiajadeh-dotcom"
+                               class="btn-project-github"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View AutoCare on GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: BACARUANG -->
+                <div class="project-card reveal-on-scroll delay-3">
+                    <div class="project-media">
+                        <span class="project-category-badge">Mobile Application</span>
+                        <img src="assets/css/images/bacaruang_project.jpeg"
+                             alt="BacaRuang Digital Library"
+                             loading="lazy">
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">📚 BacaRuang</h3>
+                        <p class="project-desc">
+                            Aplikasi perpustakaan digital untuk menjelajahi katalog buku, melihat detail & sinopsis, membaca buku secara digital, serta mengelola rak koleksi bacaan favorit pengguna.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Expo Router</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button type="button"
+                                    class="btn-project-details"
+                                    data-project-trigger="bacaruang">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </button>
+
+                            <a href="https://github.com/faridiajadeh-dotcom"
+                               class="btn-project-github"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View BacaRuang on GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4: EMPLOYEE ATTENDANCE -->
+                <div class="project-card reveal-on-scroll delay-1">
+                    <div class="project-media">
+                        <span class="project-category-badge">Web Application</span>
+                        <img src="assets/css/images/project2.png"
+                             alt="Employee Attendance System"
+                             loading="lazy">
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">📋 Employee Attendance</h3>
+                        <p class="project-desc">
+                            Sistem absensi karyawan berbasis web dengan dashboard interaktif, manajemen data pegawai, pemantauan kehadiran harian, dan penyusunan laporan rekapitulasi presensi otomatis.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button type="button"
+                                    class="btn-project-details"
+                                    data-project-trigger="attendance">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </button>
+
+                            <a href="https://github.com/faridiajadeh-dotcom"
+                               class="btn-project-github"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View Employee Attendance on GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 5: HAND GESTURE RECOGNITION -->
+                <div class="project-card reveal-on-scroll delay-2">
+                    <div class="project-media">
+                        <span class="project-category-badge">Computer Vision & AI</span>
+                        <img src="assets/css/images/project3.png"
+                             alt="Hand Gesture Recognition"
+                             loading="lazy">
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">🤖 Hand Gesture Recognition</h3>
+                        <p class="project-desc">
+                            Aplikasi Computer Vision berbasis Python yang mendeteksi gerakan tangan dan jari secara real-time via webcam dengan MediaPipe dan OpenCV, dilengkapi Text-to-Speech (TTS) untuk konversi gesture menjadi suara.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">MediaPipe</span>
+                            <span class="tech-badge">NumPy</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button type="button"
+                                    class="btn-project-details"
+                                    data-project-trigger="gesture">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </button>
+
+                            <a href="https://github.com/faridiajadeh-dotcom"
+                               class="btn-project-github"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View Hand Gesture Recognition on GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-container">
+            <button type="button" class="modal-close" id="modal-close-btn" aria-label="Close modal">
+                <i class="fas fa-xmark"></i>
+            </button>
+
+            <div class="modal-image-wrap">
+                <img id="modal-image" src="" alt="Project Preview">
+            </div>
+
+            <div class="modal-content">
+                <span class="project-category-badge" id="modal-category">Project Category</span>
+                <h3 class="modal-title" id="modal-title">Project Title</h3>
+                <p class="modal-desc" id="modal-desc">Detailed description of the project.</p>
+
+                <div class="modal-tech-list" id="modal-tech"></div>
+
+                <div class="modal-actions">
+                    <a href="#"
+                       id="modal-github"
+                       class="btn-primary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        <span>View Repository on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="index.html#home" class="footer-logo">AP<span>.</span></a>
+                    <p class="footer-copyright">© 2026 Ahmad Paridi. All Rights Reserved.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html#home" class="footer-link">Home</a></li>
+                    <li><a href="about.html" class="footer-link">About</a></li>
+                    <li><a href="index.html#skills" class="footer-link">Skills</a></li>
+                    <li><a href="projects.html" class="footer-link">Projects</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                </ul>
+                <div class="footer-right">
+                    <button type="button" class="btn-back-to-top" id="footer-back-to-top" aria-label="Back to top">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Back to Top -->
+    <button type="button" class="floating-back-to-top" id="floating-back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/css/js/script.js"></script>
+</body>
+</html>
+

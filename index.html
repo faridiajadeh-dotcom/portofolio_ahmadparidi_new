@@ -1,719 +1,942 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Ahmad Paridi — Full-Stack Developer & UI/UX Designer. Membangun aplikasi dan website modern, responsif, elegan, dan berfokus pada pengalaman pengguna.">
+    <meta name="theme-color" content="#080B14">
 
-    <title>Ahmad Paridi | Portfolio</title>
+    <title>Ahmad Paridi | Portfolio — Creative Developer & UI/UX Designer</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Plus Jakarta Sans, Poppins, League Spartan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- CSS -->
+    <!-- Custom Modern Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">AP.</h2>
+    <!-- Ambient Glowing Background Spheres -->
+    <div class="ambient-glow-wrapper" aria-hidden="true">
+        <div class="ambient-glow ambient-glow-1"></div>
+        <div class="ambient-glow ambient-glow-2"></div>
+        <div class="ambient-glow ambient-glow-3"></div>
+    </div>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- ====================================================================
+         HEADER & MODERN NAVBAR
+         ==================================================================== -->
+    <header>
+        <div class="container">
+            <nav class="navbar" aria-label="Main Navigation">
+                <!-- Logo -->
+                <a href="#home" class="logo">
+                    AP<span>.</span>
+                </a>
+
+                <!-- Desktop / Mobile Nav Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Navbar Actions -->
+                <div class="nav-actions">
+                    <a href="#contact" class="btn-nav">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                    <!-- Hamburger Button for Mobile -->
+                    <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
 
 
-    <!-- HOME -->
+    <!-- ====================================================================
+         HERO SECTION
+         ==================================================================== -->
     <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-wrapper">
 
-        <div class="hero-text">
+                <!-- Left Content -->
+                <div class="hero-text reveal-on-scroll">
+                    <!-- Availability Pill -->
+                    <div class="hero-status">
+                        <span class="status-dot"></span>
+                        <span>Available for Projects & Collaboration</span>
+                    </div>
 
-            <p class="hello">👋 Hello, I'm</p>
+                    <!-- Greeting & Headline -->
+                    <p class="hero-greeting">👋 Hello, I'm</p>
+                    <h1 class="hero-title">
+                        Ahmad <span class="name-highlight">Paridi</span>
+                    </h1>
 
-            <h1>Ahmad <span>Paridi</span></h1>
+                    <!-- Dynamic Typing Text -->
+                    <div class="hero-roles">
+                        <span class="typing-prefix">I am a </span>
+                        <span class="typing-text" id="typing"></span>
+                    </div>
 
-            <h2>
-                <span id="typing"></span>
-            </h2>
+                    <!-- Short Bio / Description -->
+                    <p class="hero-description">
+                        Saya membangun website yang modern, responsif, dan berfokus pada pengalaman pengguna.
+                        Menggabungkan estetika visual yang menawan dengan arsitektur kode yang bersih dan terstruktur
+                        untuk menciptakan pengalaman digital terbaik.
+                    </p>
 
-            <p class="description">
-                Saya membangun website yang modern,
-                responsif, dan berfokus pada pengalaman pengguna.
-                Menggabungkan desain yang menarik dengan kode yang
-                bersih untuk menciptakan pengalaman digital terbaik.
-            </p>
+                    <!-- Call To Action Buttons -->
+                    <div class="hero-buttons">
+                        <a href="assets/cv/DAFTAR RIWAYAT HIDUP.pdf"
+                           class="btn-primary"
+                           download="DAFTAR RIWAYAT HIDUP.pdf">
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
 
-            <div class="buttons">
+                        <a href="#projects" class="btn-secondary">
+                            <span>Explore My Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
 
-               
-<a href="assets/cv/DAFTAR RIWAYAT HIDUP.pdf"
-   class="btn-primary"
-   download="DAFTAR RIWAYAT HIDUP.pdf">
-    <i class="fas fa-download"></i>
-    Download CV
-</a>
+                    <!-- Social Media Links -->
+                    <div class="hero-social">
+                        <span class="social-label">Follow Me:</span>
 
+                        <a href="https://github.com/faridiajadeh-dotcom"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="GitHub"
+                           title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
 
-                <!-- Tombol menuju bagian Projects -->
-                <a href="#projects" class="btn-secondary">
-                    My Projects
-                </a>
+                        <a href="https://www.linkedin.com/in/ahmadparidi?trk=contact-info"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="LinkedIn"
+                           title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/faridi_ajadeh?vrfl=MXNnN3R3ZjF4eDE1eA%3D%3D&utm_source=qr"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="Instagram"
+                           title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@.paridi?lang=en"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="TikTok"
+                           title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: Profile Card with Modern Glow -->
+                <div class="hero-visual reveal-on-scroll delay-2">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-glow-ring"></div>
+
+                        <!-- Floating Badge 1 -->
+                        <div class="floating-chip floating-chip-1">
+                            <span class="chip-icon chip-icon-code">
+                                <i class="fas fa-code"></i>
+                            </span>
+                            <span>Full-Stack Dev</span>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="floating-chip floating-chip-2">
+                            <span class="chip-icon chip-icon-ux">
+                                <i class="fas fa-compass-drafting"></i>
+                            </span>
+                            <span>UI/UX Designer</span>
+                        </div>
+
+                        <!-- Profile Card Container -->
+                        <div class="profile-card">
+                            <div class="profile-img-container">
+                                <img src="assets/css/images/profil.jpeg"
+                                     alt="Ahmad Paridi — Profile Picture"
+                                     loading="eager">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-
-            <!-- SOCIAL MEDIA HOME -->
-            <div class="social">
-
-                <a href="https://github.com/faridiajadeh-dotcom"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="GitHub"
-                   title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/ahmadparidi?trk=contact-info"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="LinkedIn"
-                   title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="https://www.instagram.com/faridi_ajadeh?vrfl=MXNnN3R3ZjF4eDE1eA%3D%3D&utm_source=qr"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Instagram"
-                   title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="https://www.tiktok.com/@.paridi?lang=en"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="TikTok"
-                   title="TikTok">
-                   <i class="fab fa-tiktok"></i>
-                </a>
-
-            </div>
-
         </div>
 
-
-        <!-- PROFILE IMAGE -->
-        <div class="hero-image">
-
-            <div class="circle"></div>
-
-            <img src="assets/css/images/profil.jpeg"
-                 alt="Foto Ahmad Paridi">
-
-        </div>
-
+        <!-- Scroll Indicator -->
+        <a href="#about" class="hero-scroll-indicator" aria-label="Scroll down to About section">
+            <span class="mouse-icon">
+                <span class="wheel-dot"></span>
+            </span>
+            <span>Scroll Down</span>
+        </a>
     </section>
 
 
-    <!-- ABOUT -->
-    <section id="about" class="about">
-
-        <div class="section-title">
-            <h2>About Me</h2>
-            <p>Get to know me</p>
-        </div>
-
-        <div class="about-container">
-
-            <div class="about-image">
-                <img src="assets/css/images/about.png"
-                     alt="Ahmad Paridi">
-            </div>
-
-            <div class="about-content">
-
-                <h3>Hello! I'm Ahmad Paridi 👋</h3>
-
-                <p>
-                    Saya adalah mahasiswa yang memiliki minat dalam
-                    Full-Stack Development, UI/UX Design, Mobile Developer, dan Web Development.
-                    Saya senang membangun aplikasi dan website yang modern, responsif,
-                    dan berfokus pada pengalaman pengguna(UX).
+    <!-- ====================================================================
+         ABOUT ME SECTION
+         ==================================================================== -->
+    <section class="about" id="about">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">
+                    <i class="fas fa-user"></i> About Me
+                </span>
+                <h2 class="section-title">Get to Know Me Better</h2>
+                <p class="section-subtitle">
+                    Mengenal lebih dekat latar belakang, pendidikan, dan fokus keahlian saya dalam dunia teknologi.
                 </p>
-
-                <div class="about-info">
-
-                    <div>
-                        <strong>📍 Domisili</strong>
-                        Karawang, Indonesia
-                    </div>
-
-                    <div>
-                        <strong>🎓 Pendidikan</strong>
-                        S1 Teknik Informatika
-                    </div>
-
-                    <div>
-                        <strong>💻 Fokus</strong>
-                        Full-Stack Developer
-                    </div>
-
-                    <div>
-                        <strong>🎨 UI/UX</strong>
-                        Figma & Canva
-                    </div>
-
-                </div>
-
             </div>
 
-        </div>
+            <div class="about-grid">
+                <!-- Left Column: About Photo with Soft Glow & Rounded Frame -->
+                <div class="about-image-wrapper reveal-on-scroll delay-1">
+                    <div class="about-glow"></div>
+                    <div class="about-image-card">
+                        <div class="about-image-inner">
+                            <img src="assets/css/images/about.png"
+                                 alt="Ahmad Paridi — About"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Right Column: Story & Information -->
+                <div class="about-content reveal-on-scroll delay-2">
+                    <h3 class="about-lead">
+                        Hello! I'm <span class="gradient-text">Ahmad Paridi</span> 👋
+                    </h3>
+
+                    <p class="about-description">
+                        Saya adalah mahasiswa yang memiliki minat besar dalam bidang Full-Stack Development,
+                        UI/UX Design, Mobile Development, dan Web Development. Saya berdedikasi menciptakan
+                        aplikasi dan platform web modern yang tidak hanya estetik dan responsif di berbagai perangkat,
+                        tetapi juga memberikan solusi fungsional serta pengalaman pengguna (UX) yang berkesan.
+                    </p>
+
+                    <!-- Key Info Grid -->
+                    <div class="about-info-grid">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="info-text">
+                                <strong>Domisili</strong>
+                                <span>Karawang, Indonesia</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="info-text">
+                                <strong>Pendidikan</strong>
+                                <span>S1 Teknik Informatika</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="info-text">
+                                <strong>Fokus</strong>
+                                <span>Full-Stack Developer</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-bezier-curve"></i>
+                            </div>
+                            <div class="info-text">
+                                <strong>UI/UX Design</strong>
+                                <span>Figma & Canva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Capability Highlights -->
+                    <div class="about-highlights">
+                        <span class="highlight-pill">
+                            <i class="fas fa-check-circle"></i> Clean Code Architecture
+                        </span>
+                        <span class="highlight-pill">
+                            <i class="fas fa-check-circle"></i> Responsive & Mobile-First
+                        </span>
+                        <span class="highlight-pill">
+                            <i class="fas fa-check-circle"></i> Intuitive User Experience
+                        </span>
+                        <span class="highlight-pill">
+                            <i class="fas fa-check-circle"></i> REST API & Database
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
-    <!-- SKILLS -->
-    <section id="skills" class="skills">
-
-        <div class="section-title">
-            <h2>My Skills</h2>
-            <p>Technologies I Use</p>
-        </div>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5</h3>
-                <p>Semantic & Responsive Structure</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS3</h3>
-                <p>Modern Layout & Animation</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>Interactive Website</p>
-            </div>
-
-            
-            <div class="skill-card">
-                <i class="fab fa-node-js"></i>
-                <h3>Node.js</h3>
-                <p>Backend Development</p>
-            </div>
-
-            
-            <div class="skill-card">
-                <i class="fas fa-server"></i>
-                <h3>Express.js</h3>
-                <p>REST API Development</p>
-            </div>
-
-            
-            <div class="skill-card">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>React Native</h3>
-                <p>Cross-Platform Mobile Apps</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>MySQL</h3>
-                <p>Database Management</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-github-alt"></i>
-                <h3>GitHub</h3>
-                <p>Source Code Management</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-file-excel" style="color: #217346;"></i>
-                <h3>Microsoft Excel</h3>
-                <p>Data Processing & Spreadsheet</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-file-word" style="color: #185abd;"></i>
-                <h3>Microsoft Word</h3>
-                <p>Document Formatting & Reports</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fa-solid fa-palette" style="color: #00C4CC;"></i>
-                <h3>Canva</h3>
-                <p>Graphic Design & Visual Content</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-
-        <div class="section-title">
-            <h2>My Projects</h2>
-            <p>Some of my recent work</p>
-        </div>
-
-        <div class="projects-container">
-
-            <!-- PROJECT 1 -->
-            <div class="project-card">
-
-                <div class="project-image">
-                    <img src="assets/css/images/project1.png"
-                         alt="MoneyTrack Dashboard">
-                </div>
-
-                <div class="project-content">
-
-                    <h3>💰 MoneyTrack</h3>
-
-                    <p>
-                        Aplikasi manajemen keuangan berbasis PHP & MySQL
-                        untuk mencatat pemasukan, pengeluaran, kategori
-                        transaksi, dashboard analitik, dan laporan keuangan.
-                    </p>
-
-                    <div class="tech">
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>JavaScript</span>
-                        <span>Chart.js</span>
-                    </div>
-
-                    <div class="project-btn">
-
-                        <a href="#"
-                           onclick="alert('Tambahkan URL demo MoneyTrack kamu.'); return false;">
-                            <i class="fas fa-eye"></i>
-                            Live Demo
-                        </a>
-
-                        <a href="https://github.com/faridiajadeh-dotcom"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PROJECT 2 -->
-            <div class="project-card">
-
-                <div class="project-image">
-                    <img src="assets/css/images/project2.png"
-                         alt="Employee Attendance">
-                </div>
-
-                <div class="project-content">
-
-                    <h3>📋 Employee Attendance</h3>
-
-                    <p>
-                        Sistem absensi karyawan berbasis web dengan
-                        dashboard, data pegawai, laporan kehadiran,
-                        dan rekap absensi.
-                    </p>
-
-                    <div class="tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                    </div>
-
-                    <div class="project-btn">
-
-                        <a href="#"
-                           onclick="alert('Tambahkan URL demo Employee Attendance kamu.'); return false;">
-                            <i class="fas fa-eye"></i>
-                            Live Demo
-                        </a>
-
-                        <a href="https://github.com/faridiajadeh-dotcom"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PROJECT 3 -->
-            <div class="project-card">
-
-                <div class="project-image">
-                    <img src="assets/css/images/project3.png"
-                         alt="Hand Gesture Recognition">
-                </div>
-
-                <div class="project-content">
-
-                    <h3>🤖 Hand Gesture Recognition</h3>
-
-                    <p>
-                        Aplikasi Computer Vision berbasis Python yang
-                        mampu mendeteksi gerakan jari secara real-time
-                        menggunakan webcam. Sistem ini memanfaatkan
-                        MediaPipe dan OpenCV, serta dilengkapi fitur
-                        Text-to-Speech (TTS) untuk mengubah gesture menjadi suara.
-                    </p>
-
-                    <div class="tech">
-                        <span>Python</span>
-                        <span>OpenCV</span>
-                        <span>MediaPipe</span>
-                        <span>NumPy</span>
-                    </div>
-
-                    <div class="project-btn">
-
-                        <a href="#"
-                           onclick="alert('Tambahkan URL demo Hand Gesture Recognition kamu.'); return false;">
-                            <i class="fas fa-play"></i>
-                            Demo
-                        </a>
-
-                        <a href="https://github.com/faridiajadeh-dotcom"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            
-<div class="projects-container">
-
-    <!-- PROJECT 1: AUTOCARE -->
-    <div class="project-card">
-
-        <div class="project-image">
-            <img src="assets/css/images/autocare_project.png"
-                 alt="AutoCare Vehicle Service Booking App">
-        </div>
-
-        <div class="project-content">
-            <h3>🚗 AutoCare</h3>
-
-            <p>
-                Aplikasi pemesanan servis kendaraan yang membantu
-                pengguna mengelola data kendaraan dan mengakses
-                layanan servis melalui aplikasi mobile.
-            </p>
-            <!-- Tombol Demo dan View Details -->
-            <div class="project-buttons">
-                <a href="https://github.com/faridiajadeh-dotcom"
-                    class="btn-details"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <i class="fas fa-info-circle"></i>
-                        View Details
-                </a>
-            </div>
-
-            <div class="tech">    
-                <span>React Native</span>
-                <span>Expo</span>
-                <span>Node.js</span>
-                <span>MySQL</span>
-            </div>
-
-            <div class="project-btn">
-                <a href="#contact">
-                    <i class="fas fa-circle-info"></i>
-                    View Details
-                </a>
-
-                <!-- Ganti URL dengan repositori AutoCare -->
-                <a href="https://github.com/faridiajadeh-dotcom"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                    GitHub
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- PROJECT 2: BACARUANG -->
-    <div class="project-card">
-
-        <div class="project-image">
-            <img src="assets/css/images/bacaruang_project.jpeg"
-                 alt="BacaRuang Digital Library App">
-        </div>
-
-        <div class="project-content">
-            <h3>📚 BacaRuang</h3>
-
-            <p>
-                Aplikasi perpustakaan digital untuk menjelajahi
-                koleksi buku, membaca konten, melihat detail buku,
-                dan mengelola rak bacaan pengguna.
-            </p>
-
-            <div class="tech">
-                <span>React Native</span>
-                <span>Expo Router</span>
-                <span>Node.js</span>
-                <span>MySQL</span>
-            </div>
-
-            <div class="project-btn">
-                <a href="#contact">
-                    <i class="fas fa-circle-info"></i>
-                    View Details
-                </a>
-
-                <!-- Ganti URL dengan repositori BacaRuang -->
-                <a href="https://github.com/faridiajadeh-dotcom"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                    GitHub
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- PROJECT 3: MONEYTRACK -->
-    <div class="project-card">
-
-        <div class="project-image">
-            <img src="assets/css/images/moneytrack_project.png"
-                 alt="MoneyTrack Finance Dashboard">
-        </div>
-
-        <div class="project-content">
-            <h3>💰 MoneyTrack</h3>
-
-            <p>
-                Aplikasi manajemen keuangan untuk mencatat pemasukan,
-                pengeluaran, kategori transaksi, memantau saldo,
-                serta menyajikan laporan keuangan.
-            </p>
-
-            <div class="tech">
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>JavaScript</span>
-                <span>Chart.js</span>
-            </div>
-
-            <div class="project-btn">
-                <a href="#contact">
-                    <i class="fas fa-circle-info"></i>
-                    View Details
-                </a>
-
-                <!-- Ganti URL dengan repositori MoneyTrack -->
-                <a href="https://github.com/faridiajadeh-dotcom"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                    GitHub
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-</div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-
-        <div class="section-title">
-            <h2>Contact Me</h2>
-            <p>Let's Build Something Together</p>
-        </div>
-
-        <div class="contact-container">
-
-            <div class="contact-info">
-
-                <h3>Let's Talk 👋</h3>
-
-                <p>
-                    Terima kasih sudah mengunjungi portfolio saya.
-                    Jika Anda memiliki pertanyaan, ide proyek,
-                    atau ingin bekerja sama, jangan ragu untuk
-                    menghubungi saya.
+    <!-- ====================================================================
+         SKILLS SECTION
+         ==================================================================== -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">
+                    <i class="fas fa-layer-group"></i> My Skills
+                </span>
+                <h2 class="section-title">Technologies & Tools I Use</h2>
+                <p class="section-subtitle">
+                    Kombinasi bahasa pemrograman, framework, database, dan tools desain yang mendukung proses pembuatan produk digital.
                 </p>
+            </div>
 
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>faridiajadeh@gmail.com</span>
+            <!-- Skills Grid -->
+            <div class="skills-grid">
+
+                <!-- 1. HTML5 -->
+                <div class="skill-card skill-html reveal-on-scroll delay-1">
+                    <div class="skill-icon-wrap">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <p class="skill-desc">Semantic & Responsive Structure</p>
                 </div>
 
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+62 812 8127 8846</span>
+                <!-- 2. CSS3 -->
+                <div class="skill-card skill-css reveal-on-scroll delay-2">
+                    <div class="skill-icon-wrap">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-name">CSS3</h3>
+                    <p class="skill-desc">Modern Layout & Smooth Animation</p>
                 </div>
 
-                <div class="info-item">
-                    <i class="fas fa-location-dot"></i>
-                    <span>Karawang, Indonesia</span>
+                <!-- 3. JavaScript -->
+                <div class="skill-card skill-js reveal-on-scroll delay-3">
+                    <div class="skill-icon-wrap">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <p class="skill-desc">Interactive & Dynamic Website Logic</p>
                 </div>
 
-                <!-- SOCIAL MEDIA CONTACT -->
-                <div class="contact-social">
+                <!-- 4. Node.js -->
+                <div class="skill-card skill-node reveal-on-scroll delay-4">
+                    <div class="skill-icon-wrap">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="skill-name">Node.js</h3>
+                    <p class="skill-desc">Backend Runtime & Server Scripting</p>
+                </div>
 
-                    <a href="https://github.com/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="GitHub"
-                       title="GitHub">
+                <!-- 5. Express.js -->
+                <div class="skill-card skill-express reveal-on-scroll delay-1">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="skill-name">Express.js</h3>
+                    <p class="skill-desc">REST API Development & Routing</p>
+                </div>
+
+                <!-- 6. React Native -->
+                <div class="skill-card skill-react reveal-on-scroll delay-2">
+                    <div class="skill-icon-wrap">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-name">React Native</h3>
+                    <p class="skill-desc">Cross-Platform Mobile Apps</p>
+                </div>
+
+                <!-- 7. MySQL -->
+                <div class="skill-card skill-mysql reveal-on-scroll delay-3">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">MySQL</h3>
+                    <p class="skill-desc">Relational Database Management</p>
+                </div>
+
+                <!-- 8. Figma -->
+                <div class="skill-card skill-figma reveal-on-scroll delay-4">
+                    <div class="skill-icon-wrap">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3 class="skill-name">Figma</h3>
+                    <p class="skill-desc">UI/UX Design & Interactive Prototyping</p>
+                </div>
+
+                <!-- 9. GitHub -->
+                <div class="skill-card skill-github reveal-on-scroll delay-1">
+                    <div class="skill-icon-wrap">
                         <i class="fab fa-github"></i>
-                    </a>
+                    </div>
+                    <h3 class="skill-name">GitHub</h3>
+                    <p class="skill-desc">Source Code Management & Version Control</p>
+                </div>
 
-                    <a href="https://www.linkedin.com/in/ahmadparidi?trk=contact-info"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="LinkedIn"
-                       title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                <!-- 10. Microsoft Excel -->
+                <div class="skill-card skill-excel reveal-on-scroll delay-2">
+                    <div class="skill-icon-wrap">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <h3 class="skill-name">Microsoft Excel</h3>
+                    <p class="skill-desc">Data Processing & Spreadsheets</p>
+                </div>
 
-                    <a href="https://www.instagram.com/faridi_ajadeh?vrfl=MXNnN3R3ZjF4eDE1eA%3D%3D&utm_source=qr"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="Instagram"
-                       title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+                <!-- 11. Microsoft Word -->
+                <div class="skill-card skill-word reveal-on-scroll delay-3">
+                    <div class="skill-icon-wrap">
+                        <i class="fa-solid fa-file-word"></i>
+                    </div>
+                    <h3 class="skill-name">Microsoft Word</h3>
+                    <p class="skill-desc">Document Formatting & Reports</p>
+                </div>
 
-                    <a href="https://www.tiktok.com/@.paridi?lang=en"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="TikTok"
-                       title="TikTok">
-                       <i class="fab fa-tiktok"></i>
-                    </a>
-
+                <!-- 12. Canva -->
+                <div class="skill-card skill-canva reveal-on-scroll delay-4">
+                    <div class="skill-icon-wrap">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="skill-name">Canva</h3>
+                    <p class="skill-desc">Graphic Design & Visual Content</p>
                 </div>
 
             </div>
-
-
-<!-- CONTACT FORM -->
-<form id="contact-form" class="contact-form">
-
-    <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required
-    >
-
-    <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required
-    >
-
-    <input
-        type="text"
-        name="subject"
-        placeholder="Subject"
-        required
-    >
-
-    <textarea
-        name="message"
-        placeholder="Write your message..."
-        required
-    ></textarea>
-
-    <input
-        type="text"
-        name="_honey"
-        style="display: none;"
-        tabindex="-1"
-        autocomplete="off"
-    >
-
-    <button type="submit" id="send-btn">
-        Send Message
-    </button>
-
-    <p id="form-status" role="status"></p>
-
-</form>
-
         </div>
-
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- ====================================================================
+         PROJECTS SECTION
+         ==================================================================== -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">
+                    <i class="fas fa-folder-open"></i> Portfolio Showcase
+                </span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    Koleksi karya aplikasi web, mobile, dan computer vision yang telah saya kembangkan.
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+
+                <!-- PROJECT 1: MONEYTRACK -->
+                <div class="project-card reveal-on-scroll delay-1">
+                    <div class="project-media">
+                        <span class="project-category-badge">Web Application</span>
+                        <img src="assets/css/images/moneytrack_project.png"
+                             alt="MoneyTrack Finance Dashboard"
+                             loading="lazy">
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">💰 MoneyTrack</h3>
+                        <p class="project-desc">
+                            Aplikasi manajemen keuangan berbasis web untuk mencatat pemasukan, pengeluaran, kategori transaksi, memantau saldo harian, serta menyajikan dashboard visual dan laporan analitik.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Chart.js</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button type="button"
+                                    class="btn-project-details"
+                                    data-project-trigger="moneytrack">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </button>
+
+                            <a href="https://github.com/faridiajadeh-dotcom"
+                               class="btn-project-github"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View MoneyTrack on GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: AUTOCARE -->
+                <div class="project-card reveal-on-scroll delay-2">
+                    <div class="project-media">
+                        <span class="project-category-badge">Mobile Application</span>
+                        <img src="assets/css/images/autocare_project.png"
+                             alt="AutoCare Service Booking"
+                             loading="lazy">
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">🚗 AutoCare</h3>
+                        <p class="project-desc">
+                            Aplikasi pemesanan servis kendaraan mobile yang memudahkan pengguna mengelola data kendaraan, booking servis bengkel berkala, dan memantau status servis secara real-time.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Expo</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button type="button"
+                                    class="btn-project-details"
+                                    data-project-trigger="autocare">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </button>
+
+                            <a href="https://github.com/faridiajadeh-dotcom"
+                               class="btn-project-github"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View AutoCare on GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: BACARUANG -->
+                <div class="project-card reveal-on-scroll delay-3">
+                    <div class="project-media">
+                        <span class="project-category-badge">Mobile Application</span>
+                        <img src="assets/css/images/bacaruang_project.jpeg"
+                             alt="BacaRuang Digital Library"
+                             loading="lazy">
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">📚 BacaRuang</h3>
+                        <p class="project-desc">
+                            Aplikasi perpustakaan digital untuk menjelajahi katalog buku, melihat detail & sinopsis, membaca buku secara digital, serta mengelola rak koleksi bacaan favorit pengguna.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Expo Router</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button type="button"
+                                    class="btn-project-details"
+                                    data-project-trigger="bacaruang">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </button>
+
+                            <a href="https://github.com/faridiajadeh-dotcom"
+                               class="btn-project-github"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View BacaRuang on GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4: EMPLOYEE ATTENDANCE -->
+                <div class="project-card reveal-on-scroll delay-1">
+                    <div class="project-media">
+                        <span class="project-category-badge">Web Application</span>
+                        <img src="assets/css/images/project2.png"
+                             alt="Employee Attendance System"
+                             loading="lazy">
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">📋 Employee Attendance</h3>
+                        <p class="project-desc">
+                            Sistem absensi karyawan berbasis web dengan dashboard interaktif, manajemen data pegawai, pemantauan kehadiran harian, dan penyusunan laporan rekapitulasi presensi otomatis.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button type="button"
+                                    class="btn-project-details"
+                                    data-project-trigger="attendance">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </button>
+
+                            <a href="https://github.com/faridiajadeh-dotcom"
+                               class="btn-project-github"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View Employee Attendance on GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 5: HAND GESTURE RECOGNITION -->
+                <div class="project-card reveal-on-scroll delay-2">
+                    <div class="project-media">
+                        <span class="project-category-badge">Computer Vision & AI</span>
+                        <img src="assets/css/images/project3.png"
+                             alt="Hand Gesture Recognition"
+                             loading="lazy">
+                    </div>
+
+                    <div class="project-body">
+                        <h3 class="project-title">🤖 Hand Gesture Recognition</h3>
+                        <p class="project-desc">
+                            Aplikasi Computer Vision berbasis Python yang mendeteksi gerakan tangan dan jari secara real-time via webcam dengan MediaPipe dan OpenCV, dilengkapi Text-to-Speech (TTS) untuk konversi gesture menjadi suara.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">MediaPipe</span>
+                            <span class="tech-badge">NumPy</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <button type="button"
+                                    class="btn-project-details"
+                                    data-project-trigger="gesture">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </button>
+
+                            <a href="https://github.com/faridiajadeh-dotcom"
+                               class="btn-project-github"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View Hand Gesture Recognition on GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ====================================================================
+         CONTACT SECTION
+         ==================================================================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">
+                    <i class="fas fa-paper-plane"></i> Contact Me
+                </span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">
+                    Punya ide proyek menarik, tawaran peluang, atau ingin berkolaborasi? Jangan ragu untuk mengirimkan pesan.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left Column: Contact Information -->
+                <div class="contact-info-col reveal-on-scroll delay-1">
+                    <h3 class="contact-heading">
+                        Let's Talk & Build Something Great 👋
+                    </h3>
+
+                    <p class="contact-desc">
+                        Terima kasih sudah mengunjungi portfolio saya. Jika Anda memiliki pertanyaan seputar proyek, ingin berdiskusi mengenai teknologi, atau memerlukan pengembangan aplikasi, saya siap membantu mewujudkannya.
+                    </p>
+
+                    <!-- Contact Details -->
+                    <div class="contact-details">
+                        <a href="mailto:faridiajadeh@gmail.com" class="contact-detail-card">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-meta">
+                                <strong>Email</strong>
+                                <span>faridiajadeh@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:+6281281278846" class="contact-detail-card">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-meta">
+                                <strong>Nomor Telepon</strong>
+                                <span>+62 812 8127 8846</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-detail-card">
+                            <div class="contact-icon-box">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="contact-meta">
+                                <strong>Lokasi</strong>
+                                <span>Karawang, Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="contact-social-row">
+                        <a href="https://github.com/faridiajadeh-dotcom"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="GitHub"
+                           title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ahmadparidi?trk=contact-info"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="LinkedIn"
+                           title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/faridi_ajadeh?vrfl=MXNnN3R3ZjF4eDE1eA%3D%3D&utm_source=qr"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="Instagram"
+                           title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@.paridi?lang=en"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-link"
+                           aria-label="TikTok"
+                           title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Glassmorphism Contact Form (EmailJS Integrated) -->
+                <div class="contact-form-wrapper reveal-on-scroll delay-2">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="form-name" class="form-label">Your Name</label>
+                            <input type="text"
+                                   id="form-name"
+                                   name="name"
+                                   class="form-control"
+                                   placeholder="Ahmad Paridi"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email" class="form-label">Your Email</label>
+                            <input type="email"
+                                   id="form-email"
+                                   name="email"
+                                   class="form-control"
+                                   placeholder="emailanda@example.com"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-subject" class="form-label">Subject</label>
+                            <input type="text"
+                                   id="form-subject"
+                                   name="subject"
+                                   class="form-control"
+                                   placeholder="Diskusi Proyek Web / Mobile"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message" class="form-label">Message</label>
+                            <textarea id="form-message"
+                                      name="message"
+                                      class="form-control"
+                                      placeholder="Tuliskan pesan atau detail kebutuhan Anda di sini..."
+                                      required></textarea>
+                        </div>
+
+                        <!-- Anti-spam Honeypot -->
+                        <input type="text"
+                               name="_honey"
+                               style="display: none;"
+                               tabindex="-1"
+                               autocomplete="off">
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="send-btn" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+
+                        <!-- Form Status Feedback Box -->
+                        <div id="form-status" class="form-status" role="status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ====================================================================
+         FOOTER
+         ==================================================================== -->
     <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <!-- Brand / Copyright -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        AP<span>.</span>
+                    </a>
+                    <p class="footer-copyright">
+                        © 2026 Ahmad Paridi. All Rights Reserved.
+                    </p>
+                </div>
 
-        <p>© 2026 Ahmad Paridi. All Rights Reserved.</p>
+                <!-- Footer Quick Nav Links -->
+                <ul class="footer-links">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#skills" class="footer-link">Skills</a></li>
+                    <li><a href="#projects" class="footer-link">Projects</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
 
+                <!-- Footer Actions: Back to Top -->
+                <div class="footer-right">
+                    <button type="button"
+                            class="btn-back-to-top"
+                            id="footer-back-to-top"
+                            aria-label="Back to top"
+                            title="Back to Top">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
-    <!-- JAVASCRIPT LIBRARY -->
+    <!-- Floating Back to Top Button -->
+    <button type="button"
+            class="floating-back-to-top"
+            id="floating-back-to-top"
+            aria-label="Back to top of page"
+            title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- ====================================================================
+         PROJECT DETAILS MODAL (POPUP)
+         ==================================================================== -->
+    <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-container">
+            <button type="button" class="modal-close" id="modal-close-btn" aria-label="Close modal">
+                <i class="fas fa-xmark"></i>
+            </button>
+
+            <div class="modal-image-wrap">
+                <img id="modal-image" src="" alt="Project Preview">
+            </div>
+
+            <div class="modal-content">
+                <span class="project-category-badge" id="modal-category">Project Category</span>
+                <h3 class="modal-title" id="modal-title">Project Title</h3>
+                <p class="modal-desc" id="modal-desc">Detailed description of the project.</p>
+
+                <div class="modal-tech-list" id="modal-tech">
+                    <!-- Dynamic Badges -->
+                </div>
+
+                <div class="modal-actions">
+                    <a href="#"
+                       id="modal-github"
+                       class="btn-primary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        <span>View Repository on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====================================================================
+         LIBRARIES & SCRIPTS
+         ==================================================================== -->
+    <!-- Typed.js Library for animated typing text -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <!-- EMAILJS LIBRARY -->
+    <!-- EmailJS SDK (Preserved v4 browser build) -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <!-- CUSTOM JAVASCRIPT -->
-    <script src="assets/css/js/script.js"></script>
 
-    
+    <!-- Custom Portfolio Interactive Scripts -->
+    <script src="assets/css/js/script.js"></script>
 
 </body>
 </html>
