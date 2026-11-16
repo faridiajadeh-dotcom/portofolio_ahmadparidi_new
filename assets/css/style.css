@@ -1910,3 +1910,359 @@ textarea.form-control {
         transform: none !important;
     }
 }
+.academic-section {
+    padding: 100px 9%;
+    background: #0D1220;
+    position: relative;
+    overflow: hidden;
+}
+
+.academic-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.academic-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.academic-subtitle {
+    display: inline-block;
+    color: #817AFF;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.academic-heading h2 {
+    font-size: 38px;
+    color: #F8FAFC;
+    margin-bottom: 15px;
+}
+
+.academic-heading h2 span {
+    color: #817AFF
+}
+
+.academic-heading p {
+    color: #94A3B8;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.academic-education {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 35px;
+    background: linear-gradient(135deg, #171F35, #111827);
+    border: 1px solid rgba(129, 122, 255, 0.25);
+    border-radius: 20px;
+    margin-bottom: 45px;
+    transition: 0.3s ease;
+}
+
+.academic-education:hover {
+    transform: translateY(-5px);
+    border-color: #817AFF;
+    box-shadow: 0 15px 40px rgba(99, 91, 255, 0.12);
+}
+
+.academic-icon {
+    width: 75px;
+    height: 75px;
+    min-width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(129, 122, 255, 0.15);
+    color: #817AFF;
+    font-size: 30px;
+    border-radius: 18px;
+}
+
+.academic-status {
+    display: inline-block;
+    color: #A5A0FF;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.academic-info h3 {
+    color: #F8FAFC;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.academic-campus {
+    color: #94A3B8;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.academic-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.academic-details div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #CBD5E1;
+    font-size: 13px;
+}
+
+.academic-details i {
+    color: #817AFF;
+}
+
+/* DOCUMENTS */
+
+.academic-documents {
+    padding: 35px;
+    background: #111827;
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 20px;
+}
+
+.documents-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.documents-heading h3 {
+    color: #F8FAFC;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.document-count {
+    color: #A5A0FF;
+    background: rgba(129, 122, 255, 0.12);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* DOCUMENT CARD */
+
+.document-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.document-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px;
+    background: #172033;
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.document-card:hover {
+    border-color: rgba(129, 122, 255, 0.6);
+    transform: translateX(4px);
+}
+
+.document-file-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF6B78;
+    background: rgba(255, 107, 120, 0.12);
+    border-radius: 13px;
+    font-size: 24px;
+}
+
+.document-info {
+    flex: 1;
+}
+
+.document-info h4 {
+    color: #F8FAFC;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.document-info p {
+    color: #94A3B8;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.document-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #4ADE80;
+    font-size: 11px;
+}
+
+.document-label.pending {
+    color: #FBBF24;
+}
+
+.document-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.document-view,
+.document-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    border-radius: 9px;
+    transition: 0.3s ease;
+}
+
+.document-view {
+    padding: 11px 17px;
+    background: #635BFF;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.document-view:hover {
+    background: #817AFF;
+    transform: translateY(-2px);
+}
+
+.document-download {
+    width: 40px;
+    height: 40px;
+    color: #CBD5E1;
+    background: #263248;
+}
+
+.document-download:hover {
+    color: white;
+    background: #635BFF;
+}
+
+.document-coming {
+    color: #94A3B8;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.document-unavailable {
+    opacity: 0.65;
+}
+
+.academic-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #94A3B8;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-top: 25px;
+}
+
+.academic-note i {
+    color: #817AFF;
+    margin-top: 3px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .academic-section {
+        padding: 75px 6%;
+    }
+
+    .academic-heading h2 {
+        font-size: 30px;
+    }
+
+    .academic-education {
+        padding: 25px;
+        align-items: flex-start;
+    }
+
+    .academic-icon {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+        font-size: 23px;
+    }
+
+    .academic-info h3 {
+        font-size: 18px;
+    }
+
+    .academic-documents {
+        padding: 22px;
+    }
+
+    .documents-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .document-card {
+        flex-wrap: wrap;
+        padding: 17px;
+    }
+
+    .document-info {
+        min-width: 150px;
+    }
+
+    .document-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .academic-section {
+        padding: 65px 5%;
+    }
+
+    .academic-heading h2 {
+        font-size: 27px;
+    }
+
+    .academic-education {
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .academic-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .document-count {
+        font-size: 11px;
+    }
+
+    .document-info h4 {
+        font-size: 14px;
+    }
+
+    .document-view {
+        flex: 1;
+    }
+}
