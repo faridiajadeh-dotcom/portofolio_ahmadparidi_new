@@ -2645,3 +2645,12 @@ textarea.form-control {
         flex-wrap: wrap;
     }
 }
+/* CorelDRAW Skill */
+.skill-coreldraw .skill-icon-wrap {
+    color: #39A935;
+}
+
+.skill-coreldraw:hover .skill-icon-wrap {
+    color: #50D84B;
+    transform: scale(1.1);
+}
