@@ -48,6 +48,7 @@
                     <li><a href="#academic-record" class="nav-link">Academic Record</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#design-projects" class="nav-link">Design Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
 
@@ -811,6 +812,152 @@
     </section>
 
 
+<!-- DESIGN PROJECTS SECTION -->
+<section class="design-projects" id="design-projects">
+
+    <div class="design-heading">
+        <span class="design-subtitle coreldraw-badge">
+            <i class="fas fa-bezier-curve"></i>
+            CORELDRAW DESIGN PORTFOLIO
+        </span>
+
+        <h2>Design <span>Projects</span></h2>
+
+        <p>
+            A collection of graphic design works created
+            with creativity and visual exploration using CorelDRAW.
+        </p>
+    </div>
+
+    <div class="design-grid">
+
+        <!-- DESIGN 1 -->
+        <article class="design-item">
+            <div class="design-image">
+                <img
+                    src="assets/css/images/desain/desain_1.jpg"
+                    alt="Graphic Design Project 1"
+                    loading="lazy"
+                >
+                <span class="design-index">01</span>
+            </div>
+
+            <div class="design-info">
+                <span class="design-category">FOOTBALL POSTER DESIGN</span>
+
+                <h3>Erling Haaland Poster</h3>
+
+                <p>
+                    football poster featuring Erling Haaland in his
+                    Manchester City jersey, combining player photography,
+                    dynamic composition, and bold typography.
+                </p>
+
+                <div class="design-tags">
+                    <span>CorelDRAW</span>
+                    <span>Sports Design</span>
+                </div>
+
+                <button
+                    class="design-view-btn"
+                    type="button"
+                    data-image="assets/css/images/desain/desain_1.jpg"
+                    data-title="Erling Haaland Poster"
+                >
+                    <i class="fas fa-eye"></i>
+                    View Design
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+        </article>
+
+        <!-- DESIGN 2 -->
+        <article class="design-item">
+            <div class="design-image">
+                <img
+                    src="assets/css/images/desain/desain_2.jpeg"
+                    alt="Graphic Design Project 2"
+                    loading="lazy"
+                >
+                <span class="design-index">02</span>
+            </div>
+
+            <div class="design-info">
+                <span class="design-category">SPORTS GRAPHIC DESIGN</span>
+
+                <h3>Real Madrid Player Poster</h3>
+
+                <p>
+                    A football-themed visual composition highlighting
+                    Real Madrid players through layered photography,
+                    contrasting colors, and modern 
+                    poster styling.
+                </p>
+
+                <div class="design-tags">
+                    <span>CorelDRAW</span>
+                    <span>Football Artwork</span>
+                </div>
+
+                <button
+                    class="design-view-btn"
+                    type="button"
+                    data-image="assets/css/images/desain/desain_2.jpeg"
+                    data-title="Erling Haaland Poster"
+                >
+                    <i class="fas fa-eye"></i>
+                    View Design
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+        </article>
+
+        <!-- DESIGN 3 -->
+        <article class="design-item">
+            <div class="design-image">
+                <img
+                    src="assets/css/images/desain/desain_3.jpg"
+                    alt="Graphic Design Project 3"
+                    loading="lazy"
+                >
+                <span class="design-index">03</span>
+            </div>
+
+            <div class="design-info">
+                <span class="design-category">BEVERAGE PROMOTION DESIGN</span>
+
+                <h3>Matcha Latte Promotion</h3>
+
+                <p>
+                    A promotional beverage design showcasing a refreshing
+                    matcha latte with green visual elements, product
+                    photography, and an attractive commercial layout.
+                </p>
+
+                <div class="design-tags">
+                    <span>CorelDRAW</span>
+                    <span>Product Promotion</span>
+                </div>
+
+                <button
+                    class="design-view-btn"
+                    type="button"
+                    data-image="assets/css/images/desain/desain_3.jpg"
+                    data-title="Erling Haaland Poster"
+                >
+                    <i class="fas fa-eye"></i>
+                    View Design
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </button>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+
+
     <!-- ====================================================================
          CONTACT SECTION
          ==================================================================== -->
@@ -1062,6 +1209,45 @@
     </div>
 
 
+<!-- FULL DESIGN PREVIEW MODAL -->
+<div class="design-preview-modal" id="designPreviewModal"
+     aria-hidden="true">
+
+    <div class="design-preview-content">
+
+        <div class="design-preview-header">
+            <div>
+                <span>DESIGN PREVIEW</span>
+                <h3 id="previewDesignTitle">Design Title</h3>
+            </div>
+
+            <button type="button" id="closeDesignPreview"
+                    aria-label="Close preview">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="design-preview-image">
+            <img id="previewDesignImage" src="" alt="Full design preview">
+        </div>
+
+        <div class="design-preview-footer">
+            <span>
+                <i class="fas fa-bezier-curve"></i>
+                Created with CorelDRAW
+            </span>
+
+            <a id="downloadDesignImage" href="" download>
+                <i class="fas fa-download"></i>
+                Download Image
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+
     <!-- ====================================================================
          LIBRARIES & SCRIPTS
          ==================================================================== -->
@@ -1073,6 +1259,8 @@
 
     <!-- Custom Portfolio Interactive Scripts -->
     <script src="assets/css/js/script.js"></script>
+
+    <script src="assets/css/js/design-gallery.js"></script>
 
 </body>
 </html>
