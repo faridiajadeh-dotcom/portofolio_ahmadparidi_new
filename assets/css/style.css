@@ -2654,3 +2654,56 @@ textarea.form-control {
     color: #50D84B;
     transform: scale(1.1);
 }
+
+
+/* CV BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn-view-cv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 13px 24px;
+    border: 1px solid #635BFF;
+    border-radius: 10px;
+
+    color: #817AFF;
+    background: transparent;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: all .3s ease;
+}
+
+.btn-view-cv:hover {
+    background: #635BFF;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(99, 91, 255, .25);
+}
+
+.btn-view-cv i {
+    font-size: 15px;
+}
+
+@media (max-width: 480px) {
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .btn-view-cv,
+    .hero-buttons .btn-primary {
+        padding: 12px 17px;
+        font-size: 12px;
+    }
+}
